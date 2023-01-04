@@ -1,24 +1,14 @@
 package com.project.rebelskool.implementation;
+
 import com.project.rebelskool.entity.*;
-import com.project.rebelskool.repo.OrganizationRepo;
 import com.project.rebelskool.repo.IncomeStatementFieldsRepo;
-import com.project.rebelskool.repo.IncomeStatementHeadersRepo;
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Example;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
-
-import java.io.IOException;
-import java.util.ArrayList;
+import java.util.*;
+import java.util.stream.Collectors;
 import java.util.HashMap;
-import java.util.List;
+import java.util.LinkedHashMap;
 import java.util.Map;
-
 
 @Service
 public class IncomeStatementImpl {
@@ -42,27 +32,47 @@ public class IncomeStatementImpl {
         IncomeStatementFieldsList = IncomeStatementFieldsRepo.findAll();
         Map<String,List<FieldDetails>> incomeStatementFieldsMap = new HashMap<>();
 
-        if (IncomeStatementFieldsList.size() > 0 ) {
-            IncomeStatementFieldsList.forEach(
-                    (result) -> {
-                        List<FieldDetails> incomeStatementField = new ArrayList<>();
-                        FieldDetails fieldsDetails = new FieldDetails();
-                        fieldsDetails.setName(result.fields);
-                        fieldsDetails.setRange(result.accountnos);
-                        fieldsDetails.setYear(result.year);
+        Integer headerCount = 0;
+        Map headers=new HashMap();
+        String header = new String("");
 
-                        incomeStatementField = incomeStatementFieldsMap.get(result.header);
-                            if (null == incomeStatementField) {
-                                    List<FieldDetails> fieldsDetailsList = new ArrayList<>();
-                                    fieldsDetailsList.add(fieldsDetails);
-                                incomeStatementFieldsMap.put(result.header, fieldsDetailsList);
-                            } else
-                                {
-                                    incomeStatementField.add(fieldsDetails);
-                                    incomeStatementFieldsMap.put(result.header, incomeStatementField);
-                                }
-                    });
+        for ( IncomeStatementFields result : IncomeStatementFieldsList){
+            List<FieldDetails> incomeStatementField = new ArrayList<>();
+            FieldDetails fieldsDetails = new FieldDetails();
+            fieldsDetails.setName(result.fields);
+            fieldsDetails.setRange(result.accountnos);
+            fieldsDetails.setYear(result.year);
+            fieldsDetails.setAcceptonlynegativevalues(result.acceptonlynegativevalues);
+            fieldsDetails.setIssumfield(result.issumfield);
+
+           if(null != headers.get(result.header)){
+               header =  headers.get(result.header).toString();
+           }
+           else
+           {
+               headerCount++;
+               headers.put(result.header, headerCount+"@#%#@"+result.header);
+               header = headerCount+"@#%#@"+result.header;
+           }
+
+            incomeStatementField = incomeStatementFieldsMap.get(header);
+            if (null == incomeStatementField) {
+                List<FieldDetails> fieldsDetailsList = new ArrayList<>();
+                fieldsDetailsList.add(fieldsDetails);
+                incomeStatementFieldsMap.put(header, fieldsDetailsList);
+            } else
+            {
+                incomeStatementField.add(fieldsDetails);
+                incomeStatementFieldsMap.put(header, incomeStatementField);
+            }
         }
-        return incomeStatementFieldsMap;
+
+        Map<String,List<FieldDetails>> result = incomeStatementFieldsMap.entrySet().stream()
+                .sorted(Map.Entry.comparingByKey())
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
+                        (oldValue, newValue) -> oldValue, LinkedHashMap::new));
+
+        return result;
     }
+
 }

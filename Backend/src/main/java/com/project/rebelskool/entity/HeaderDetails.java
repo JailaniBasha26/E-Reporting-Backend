@@ -1,13 +1,11 @@
 package com.project.rebelskool.entity;
+
 import lombok.Getter;
 import lombok.Setter;
 import lombok.NoArgsConstructor;
-
-import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
-//@Entity
 @Getter
 @Setter
 @NoArgsConstructor
@@ -33,8 +31,4 @@ public class HeaderDetails implements Serializable {
     public void setFields(List<FieldDetails> fields) {
         this.fields = fields;
     }
-
-//    public void List<FieldDetails> getFieldDetails(){
-//        return FieldDetails;
-//    }
 }
