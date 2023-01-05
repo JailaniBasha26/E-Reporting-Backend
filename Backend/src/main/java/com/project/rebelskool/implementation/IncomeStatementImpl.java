@@ -4,6 +4,8 @@ import com.project.rebelskool.entity.*;
 import com.project.rebelskool.repo.IncomeStatementFieldsRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.HashMap;
@@ -16,7 +18,7 @@ public class IncomeStatementImpl {
     @Autowired
     private IncomeStatementFieldsRepo IncomeStatementFieldsRepo;
 
-    public List<HeaderDetails> getIcomeStatementDetails(List<HeaderDetails> HeaderDetails) throws IOExceptio{
+    public List<HeaderDetails> getIcomeStatementDetails(List<HeaderDetails> HeaderDetails) throws IOException{
         if (HeaderDetails.size() > 0 ) {
             HeaderDetails.forEach(
                     (temp) -> {
@@ -27,7 +29,7 @@ public class IncomeStatementImpl {
         return HeaderDetails;
     }
 
-    public Map<String,List<FieldDetails>> getIcomeStatementHeaderDetails() throws IOExceptio{
+    public Map<String,List<FieldDetails>> getIcomeStatementHeaderDetails() throws IOException {
         List<IncomeStatementFields> IncomeStatementFieldsList = new ArrayList<>();
         IncomeStatementFieldsList = IncomeStatementFieldsRepo.findAll();
         Map<String,List<FieldDetails>> incomeStatementFieldsMap = new HashMap<>();
