@@ -50,6 +50,13 @@ private OrganizationRepo OrganizationRepo;
         return incomeStatementFieldsDetails;
     }
 
+    @GetMapping("/getIncomeStatementFieldsByYear/{year}")
+    public Map<String,List<FieldDetails>> getIncomeStatementFieldsByYear(@PathVariable Integer year)  throws IOException {
+        Map<String,List<FieldDetails>> incomeStatementFieldsDetails = new HashMap<>();
+        incomeStatementFieldsDetails = IncomeStatementImpl.getIncomeStatementFieldsByYear(year);
+        return incomeStatementFieldsDetails;
+    }
+
     @GetMapping("/getCarouselImages")
     public List<String> getCarouselImages()  throws IOException {
         List<String> urlList = new ArrayList<>();
