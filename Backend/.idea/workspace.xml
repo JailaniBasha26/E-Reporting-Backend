@@ -2,37 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a60dce1-198c-473a-95fe-be1d884f7fc3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rebelskool/entity/UserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rebelskool/repo/UserDetailsRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/elasticsearch/nodes/0/_state/global-199.st" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/rebelskool/RebelSkoolStarter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/rebelskool/controller/RebelSkoolController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/rebelskool/entity/CarouselUrl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/rebelskool/entity/FieldDetails.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/rebelskool/entity/HeaderDetails.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/rebelskool/entity/IncomeStatementFields.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/rebelskool/entity/Organization.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/rebelskool/implementation/CarouselImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/rebelskool/implementation/IOExceptio.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/rebelskool/implementation/IncomeStatementImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/rebelskool/implementation/OrganizationImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/rebelskool/repo/CarouselRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/rebelskool/repo/IncomeStatementFieldsRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/rebelskool/repo/OrganizationRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/rebelskool/RebelSkoolStarter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/rebelskool/controller/RebelSkoolController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/rebelskool/entity/CarouselUrl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/rebelskool/entity/FieldDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/rebelskool/entity/HeaderDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/rebelskool/entity/IncomeStatementFields.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/rebelskool/entity/Organization.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/rebelskool/implementation/CarouselImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/rebelskool/implementation/IOExceptio.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/rebelskool/implementation/IncomeStatementImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/rebelskool/implementation/OrganizationImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/rebelskool/repo/CarouselRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/rebelskool/repo/IncomeStatementFieldsRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/rebelskool/repo/OrganizationRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/elasticsearch/nodes/0/_state/global-221.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rebelskool/controller/RebelSkoolController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rebelskool/controller/RebelSkoolController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rebelskool/implementation/CarouselImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rebelskool/implementation/CarouselImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rebelskool/controller/RebelSkoolController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rebelskool/controller/RebelSkoolController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rebelskool/implementation/CarouselImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rebelskool/implementation/CarouselImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rebelskool/implementation/IncomeStatementImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rebelskool/implementation/IncomeStatementImpl.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rebelskool/controller/RebelSkoolController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="365">
+              <caret line="100" column="48" selection-start-line="100" selection-start-column="48" selection-end-line="100" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,7 +38,73 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rebelskool/repo/UserDetailsRepo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="76" selection-start-line="23" selection-start-column="76" selection-end-line="23" selection-end-column="76" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rebelskool/repo/CarouselRepo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rebelskool/implementation/CarouselImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="28" column="22" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rebelskool/entity/CarouselUrl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" selection-end-line="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rebelskool/entity/UserDetails.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rebelskool/entity/FieldDetails.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rebelskool/implementation/IncomeStatementImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="212">
@@ -72,17 +116,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.25.RELEASE/spring-web-4.3.25.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="213" selection-start-line="213" selection-end-line="213" />
+            <state relative-caret-position="-28">
+              <caret line="204" selection-start-line="204" selection-end-line="204" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>headers</find>
+      <find>OrganizationRepo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -94,12 +147,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/rebelskool/repo/IncomeStatementFieldsRepo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rebelskool/entity/FieldDetails.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rebelskool/implementation/IncomeStatementImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rebelskool/implementation/CarouselImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rebelskool/entity/UserDetails.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rebelskool/repo/UserDetailsRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rebelskool/controller/RebelSkoolController.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1318" />
-    <option name="y" value="-34" />
+    <option name="x" value="-1329" />
+    <option name="y" value="-25" />
     <option name="width" value="1279" />
     <option name="height" value="671" />
   </component>
@@ -143,6 +200,42 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rebelskool" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="rebelskool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rebelskool" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rebelskool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rebelskool" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rebelskool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rebelskool" type="462c0819:PsiDirectoryNode" />
+              <item name="implementation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rebelskool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rebelskool" type="462c0819:PsiDirectoryNode" />
+              <item name="repo" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -152,6 +245,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -204,8 +298,8 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.27322406" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18032786" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.24590164" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -218,19 +312,47 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.25" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="3" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" />
+      <window_info anchor="bottom" id="Debug" order="7" visible="true" weight="0.27322406" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/rebelskool/controller/RebelSkoolController.java</url>
-          <line>61</line>
+          <line>66</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/rebelskool/controller/RebelSkoolController.java</url>
-          <line>62</line>
+          <line>67</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
@@ -312,16 +434,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rebelskool/entity/CarouselUrl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rebelskool/entity/HeaderDetails.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -343,40 +455,88 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rebelskool/implementation/IncomeStatementImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="86" column="60" selection-start-line="86" selection-start-column="60" selection-end-line="86" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rebelskool/entity/FieldDetails.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-            <element signature="e#726#727#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.25.RELEASE/spring-web-4.3.25.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/1.11.23.RELEASE/spring-data-jpa-1.11.23.RELEASE-sources.jar!/org/springframework/data/jpa/repository/JpaRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="213" selection-start-line="213" selection-end-line="213" />
+        <state relative-caret-position="296">
+          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rebelskool/controller/RebelSkoolController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rebelskool/implementation/CarouselImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        <state relative-caret-position="357">
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rebelskool/entity/UserDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rebelskool/implementation/IncomeStatementImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rebelskool/entity/CarouselUrl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="86" column="60" selection-start-line="86" selection-start-column="60" selection-end-line="86" selection-end-column="60" />
+        <state relative-caret-position="323">
+          <caret line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rebelskool/repo/CarouselRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.25.RELEASE/spring-web-4.3.25.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28">
+          <caret line="204" selection-start-line="204" selection-end-line="204" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rebelskool/repo/UserDetailsRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="76" selection-start-line="23" selection-start-column="76" selection-end-line="23" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rebelskool/controller/RebelSkoolController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="100" column="48" selection-start-line="100" selection-start-column="48" selection-end-line="100" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
