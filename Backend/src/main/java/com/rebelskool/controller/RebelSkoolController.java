@@ -3,15 +3,18 @@ package com.rebelskool.controller;
 import com.rebelskool.entity.*;
 import com.rebelskool.repo.OrganizationRepo;
 import com.rebelskool.repo.UserDetailsRepo;
+import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.core.io.DefaultResourceLoader;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.ResourceLoader;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.io.InputStream;
+import java.util.*;
 
 import com.rebelskool.implementation.IncomeStatementImpl;
 import com.rebelskool.implementation.CarouselImpl;
@@ -36,6 +39,7 @@ public class RebelSkoolController implements CommandLineRunner {
     @Autowired
     private UserDetailsRepo UserDetailsRepo;
 
+    private ResourceLoader resourceLoader = new DefaultResourceLoader();
     @Override
     public void run(String... strings) throws Exception {
     }
@@ -120,6 +124,28 @@ public class RebelSkoolController implements CommandLineRunner {
         return checkDataExistsInUserDetailsList(userDetailsList);
     }
 
+    @GetMapping("/getCaptchaCode")
+    public String getCaptchaCode() throws IOException {
+        String Captials = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        String Small = Captials.toLowerCase();
+        String Numbers = "0123456789";
+        String CombinedString = Captials+Small+Numbers;
+
+        StringBuilder salt = new StringBuilder();
+        Random rnd = new Random();
+        while (salt.length() < 5) { // length of the random string.
+            int index = (int) (rnd.nextFloat() * CombinedString.length());
+            salt.append(CombinedString.charAt(index));
+        }
+        String saltStr = salt.toString();
+        return saltStr;
+    }
+
+    @GetMapping("/generateUUID")
+    public UUID generateUUID() throws IOException {
+        UUID uuid = UUID.randomUUID();
+        return uuid;
+    }
     private Boolean checkDataExistsInUserDetailsList(List<UserDetails> userDetailsList) {
         if (userDetailsList.size() > 0) {
             return true;
