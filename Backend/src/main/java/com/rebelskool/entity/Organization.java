@@ -14,7 +14,7 @@ public class Organization {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public String organizationname;
-    public String organizationno;
-    public String zipcode;
-    public String postaladdress;
+    public String organizationnumber;
+    public Integer postalcode;
+    public String city;
 }

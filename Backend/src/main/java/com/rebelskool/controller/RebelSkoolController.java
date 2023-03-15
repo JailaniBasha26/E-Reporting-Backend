@@ -1,6 +1,7 @@
 package com.rebelskool.controller;
 
 import com.rebelskool.entity.*;
+//import com.rebelskool.repo.CompanyInformationRepo;
 import com.rebelskool.repo.OrganizationRepo;
 import com.rebelskool.repo.UserDetailsRepo;
 import org.apache.commons.io.IOUtils;
@@ -35,6 +36,9 @@ public class RebelSkoolController implements CommandLineRunner {
 
     @Autowired
     private OrganizationRepo OrganizationRepo;
+
+//    @Autowired
+//    private CompanyInformationRepo CompanyInformationRepo;
 
     @Autowired
     private UserDetailsRepo UserDetailsRepo;
@@ -89,7 +93,7 @@ public class RebelSkoolController implements CommandLineRunner {
 
     @PostMapping("/postOrganizationDetails")
     public String postOrganizationDetails(@RequestBody Organization organizationParam) throws IOException {
-        OrganizationRepo.addNewOrganization(organizationParam.organizationname, organizationParam.organizationno, organizationParam.zipcode, organizationParam.postaladdress);
+        OrganizationRepo.addNewOrganization(organizationParam.organizationname, organizationParam.organizationnumber, organizationParam.postalcode, organizationParam.city);
         return "Inserted";
     }
 
@@ -146,6 +150,13 @@ public class RebelSkoolController implements CommandLineRunner {
         UUID uuid = UUID.randomUUID();
         return uuid;
     }
+
+//    @PostMapping("/companyInformation")
+//    public String companyInformation(@RequestBody CompanyInformation CompanyInformation) throws IOException {
+//        CompanyInformationRepo.addCompanyInformation(CompanyInformation.GUID, CompanyInformation.companyname, CompanyInformation.companynumber, CompanyInformation.postalcode, CompanyInformation.city, CompanyInformation.financialyear);
+//        return "Inserted";
+//    }
+
     private Boolean checkDataExistsInUserDetailsList(List<UserDetails> userDetailsList) {
         if (userDetailsList.size() > 0) {
             return true;
